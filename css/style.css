@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #container_home {
@@ -581,4 +581,149 @@ a {
     left: 0px;
     bottom: 94px;
     z-index: -1;
+}
+
+#container_comments {
+    position: relative;
+    height: 100%;
+    background-color: #042640;
+    z-index: 1;
+}
+
+.container_comments {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+}
+
+.container_comments_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.area_comments {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.title_comments h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--color-primary);
+}
+
+.commenst_group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.area_comments_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    max-width: 430px;
+}
+
+.comment_text h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.comment_name h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--color-primary);
+    margin: 0px;
+}
+
+.bg_comment_2 {
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.container_warranty {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #F3F3F3;
+    box-shadow: -13px 10px 40px rgba(0, 0, 0, 0.25);
+    padding: 100px 0px 100px 0px;
+    margin: 80px 0px 80px 0px;
+}
+
+.container_warranty_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.area_warranty {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1280px;
+}
+
+.area_texts_warranty {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 720px;
+}
+
+.title_warranty h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 44px;
+    color: #FF3900;
+    margin: 0px;
+}
+
+.sub_title_warranty h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #101C25;
+    margin: 0px;
+}
+
+.btn_warranty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFBA00;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 15px 30px 15px 30px;
+    margin: 40px 0px 40px 0px;
+    max-width: 430px;
+}
+
+.btn_warranty h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-secondary);
+    margin: 0px;
 }
