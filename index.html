@@ -65,33 +65,101 @@
 
                     </div>
 
-                    <img class="bg_video" src="img/bg_video.png" alt="">
+                    <div class="area_player">
+                        <div class="up_container">
+                            <div class="player-wrapper">
+                                <video class="player" width="100%" height="auto" autoplay preload="auto" controls loop
+                                    muted playsinline>
+                                    <source src="video/como_ler_muito_mais_rapido.mp4" type="video/mp4">
+                                    </source>
+                                    <!--<source src="https://maiarafarias.com/videos/Reprogramando_as_celulas.mov"
+                                        type="video/mov">
+                                    </source>
+                                    <source src="https://maiarafarias.com/videos/Reprogramando_as_celulas.webm"
+                                        type="video/webm">
+                                    </source>-->
 
+                                </video>
+
+
+                                <script>
+
+                                    var player = document.querySelector('.player');
+                                    function playClick() {
+
+                                        player.volume = 1;
+                                        player.muted = false;
+                                        player.currentTime = 0;
+                                        player.controls = false;
+
+                                        document.querySelector(".thumb_1").style.display = "none";
+                                        document.querySelector(".hidden_controls").style.display = "none";
+
+                                    }
+
+
+                                    function pauseClick() {
+                                        player.pause();
+                                        document.querySelector(".thumb_2").style.display = "flex";
+                                    }
+
+                                    function returnVideo() {
+                                        player.play();
+                                        document.querySelector(".thumb_2").style.display = "none";
+                                    }
+
+                                </script>
+
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+                                <div class="thumb_1" onclick="playClick()">
+                                    <lottie-player
+                                        src="https://lottie.host/7b6800a5-f6bf-49c6-85c0-78750531f007/dH5X6yOzmA.json"
+                                        background="transparent" speed="1" style="width: 200px; height: 200px;" loop
+                                        autoplay></lottie-player>
+
+                                </div>
+
+                                <div class="thumb_2" onclick="returnVideo()">
+                                    <lottie-player
+                                        src="https://lottie.host/7b6800a5-f6bf-49c6-85c0-78750531f007/dH5X6yOzmA.json"
+                                        background="transparent" speed="1" style="width: 200px; height: 200px;" loop
+                                        autoplay></lottie-player>
+
+                                </div>
+
+                                <div class="hidden_controls"></div>
+
+                                <div class="glass" onclick="pauseClick()"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <svg id="bg_home" width="500" height="756" viewBox="0 0 500 756" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_i_13_27)">
-                    <path
-                        d="M445.5 722L441.381 716.263C412.798 676.439 398.507 656.525 379.623 642.108C362.906 629.345 343.644 619.771 322.939 613.93C299.551 607.333 273.786 607.333 222.254 607.333H165.68C119.587 607.333 96.5414 607.333 78.9366 599.001C63.4506 591.674 50.8604 579.978 42.9703 565.595C34 549.243 34 527.835 34 485.022V156.311C34 113.498 34 92.0917 42.9703 75.7394C50.8604 61.3553 63.4506 49.6608 78.9366 42.3321C96.5414 34 119.587 34 165.68 34H182.14C274.325 34 320.417 34 355.627 50.6637C386.598 65.322 411.778 88.7109 427.559 117.479C445.5 150.183 445.5 192.996 445.5 278.622M445.5 722V278.622M445.5 722L449.619 716.263C478.202 676.439 492.493 656.525 511.377 642.108C528.092 629.345 547.354 619.771 568.061 613.93C591.447 607.333 617.215 607.333 668.747 607.333H725.32C771.412 607.333 794.46 607.333 812.064 599.001C827.549 591.674 840.141 579.978 848.029 565.595C857 549.243 857 527.835 857 485.022V156.311C857 113.498 857 92.0917 848.029 75.7394C840.141 61.3553 827.549 49.6608 812.064 42.3321C794.46 34 771.412 34 725.32 34H708.86C616.676 34 570.584 34 535.372 50.6637C504.402 65.322 479.222 88.7109 463.441 117.479C445.5 150.183 445.5 192.996 445.5 278.622"
-                        stroke="#FF3900" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-                <defs>
-                    <filter id="filter0_i_13_27" x="0.666626" y="0.666626" width="904.667" height="769.667"
-                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
-                        <feOffset dx="23" dy="22" />
-                        <feGaussianBlur stdDeviation="7.5" />
-                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_13_27" />
-                    </filter>
-                </defs>
-            </svg>
+            </div>
+        </div>
+
+        <svg id="bg_home" width="500" height="756" viewBox="0 0 500 756" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_i_13_27)">
+                <path
+                    d="M445.5 722L441.381 716.263C412.798 676.439 398.507 656.525 379.623 642.108C362.906 629.345 343.644 619.771 322.939 613.93C299.551 607.333 273.786 607.333 222.254 607.333H165.68C119.587 607.333 96.5414 607.333 78.9366 599.001C63.4506 591.674 50.8604 579.978 42.9703 565.595C34 549.243 34 527.835 34 485.022V156.311C34 113.498 34 92.0917 42.9703 75.7394C50.8604 61.3553 63.4506 49.6608 78.9366 42.3321C96.5414 34 119.587 34 165.68 34H182.14C274.325 34 320.417 34 355.627 50.6637C386.598 65.322 411.778 88.7109 427.559 117.479C445.5 150.183 445.5 192.996 445.5 278.622M445.5 722V278.622M445.5 722L449.619 716.263C478.202 676.439 492.493 656.525 511.377 642.108C528.092 629.345 547.354 619.771 568.061 613.93C591.447 607.333 617.215 607.333 668.747 607.333H725.32C771.412 607.333 794.46 607.333 812.064 599.001C827.549 591.674 840.141 579.978 848.029 565.595C857 549.243 857 527.835 857 485.022V156.311C857 113.498 857 92.0917 848.029 75.7394C840.141 61.3553 827.549 49.6608 812.064 42.3321C794.46 34 771.412 34 725.32 34H708.86C616.676 34 570.584 34 535.372 50.6637C504.402 65.322 479.222 88.7109 463.441 117.479C445.5 150.183 445.5 192.996 445.5 278.622"
+                    stroke="#FF3900" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <filter id="filter0_i_13_27" x="0.666626" y="0.666626" width="904.667" height="769.667"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dx="23" dy="22" />
+                    <feGaussianBlur stdDeviation="7.5" />
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_13_27" />
+                </filter>
+            </defs>
+        </svg>
 
         </div>
 
@@ -105,10 +173,10 @@
         <div class="container_read_int">
             <div class="area_read">
 
-                <img class="sleep" src="img/sleep.png" alt="">
+                <img class="sleep" src="img/sleep.png" alt="" data-animation="left">
 
 
-                <div class="area_texts_read">
+                <div class="area_texts_read" data-animation="right">
                     <h2>
                         Você nunca mais vai olhar para os livros da mesma forma, <b>pois você irá querer ler todos
                             que estiverem na sua frente.</b>
@@ -129,7 +197,7 @@
         <div class="container_worry_int">
             <div class="area_worry">
 
-                <div class="title_worry">
+                <div class="title_worry" data-animation="down">
                     <h2>
                         Você <b>não vai precisar</b><br> se preocupar em:
                     </h2>
@@ -144,7 +212,7 @@
 
                 <div class="cards_worry">
 
-                    <div class="card_1">
+                    <div class="card_1" data-animation="down" data-delay-1>
                         <img src="img/spend.png" alt="">
                         <div class="title_spend">
                             <h2>Gastar muito</h2>
@@ -157,7 +225,7 @@
                         </div>
                     </div>
 
-                    <div class="card_2">
+                    <div class="card_2" data-animation="down" data-delay-2>
                         <img src="img/suffer.png" alt="">
                         <div class="title_suffer">
                             <h2>Sofrer</h2>
@@ -170,7 +238,7 @@
                         </div>
                     </div>
 
-                    <div class="card_3">
+                    <div class="card_3" data-animation="down" data-delay-3>
                         <img src="img/wrong.png" alt="">
                         <div class="title_wrong">
                             <h2>Errar</h2>
@@ -201,13 +269,13 @@
 
             <div class="container_fast_int">
                 <div class="area_fast">
-                    <div class="title_fast">
+                    <div class="title_fast" data-animation="down" data-delay-1>
                         <h2>
-                            PROGRAMA INTENSIVO DE lEITURA EM VÍDEO:
+                            Programa completo de leitura de livros
                         </h2>
                     </div>
 
-                    <div class="sub_title_fast">
+                    <div class="sub_title_fast" data-animation="down" data-delay-2>
                         <h2>
                             COMO LER MUITO MAIS RÁPIDO
                         </h2>
@@ -216,27 +284,27 @@
                     <div class="area_info_fast">
 
                         <div class="infos_fast">
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="left" data-delay-1>
                                 <h2>
                                     Curso de Leitura Rápida
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="left" data-delay-2>
                                 <h2>
                                     Plataforma de Membros
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="left" data-delay-3>
                                 <h2>
                                     Metodologia Didática
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="left" data-delay-4>
                                 <h2>
                                     Professor com Experiência
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="left" data-delay-5>
                                 <h2>
                                     Conteúdo exclusivo de Leitura
                                 </h2>
@@ -246,27 +314,27 @@
                         <img src="img/mockup.png" alt="">
 
                         <div class="infos_fast">
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="right" data-delay-1>
                                 <h2>
                                     Mapas Mentais Práticos
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="right" data-delay-2>
                                 <h2>
                                     Desafio 1 Livro por Semana
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="right" data-delay-3>
                                 <h2>
                                     Scanning e Skimming
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="right" data-delay-4>
                                 <h2>
                                     100% em Português
                                 </h2>
                             </div>
-                            <div class="info_int_fast">
+                            <div class="info_int_fast" data-animation="right" data-delay-5>
                                 <h2>
                                     Com material de apoio
                                 </h2>
@@ -275,18 +343,18 @@
 
                     </div>
 
-                    <div class="btn_fast">
+                    <div class="btn_fast" data-animation="down" data-delay-1>
                         <h2>COMPRAR O PROGRAMA COMPLETO</h2>
                     </div>
 
-                    <div class="text_info_fast">
+                    <div class="text_info_fast" data-animation="down" data-delay-2>
                         <h2>
                             Um programa de leitura completo e acessível onde só será preciso aplicar somente 15 minutos
                             do seu dia para ler no mínimo 1 livro por semana com total entendimento e propósito!
                         </h2>
                     </div>
 
-                    <div class="sub_text_info_fast">
+                    <div class="sub_text_info_fast" data-animation="down" data-delay-3>
                         <div class="box_left"></div>
                         <p>
                             Atenção: Esse curso foi criado em maio de 2021, os resultados são comprovados por mais de
@@ -334,13 +402,13 @@
         <div class="cotainer_exclusive_int">
 
             <div class="area_exclusive">
-                <div class="title_exclusive">
+                <div class="title_exclusive" data-animation="left">
                     <h2>Esse programa é <b>exclusivo</b><br> para quem:</h2>
                 </div>
 
                 <div class="area_cards_exclusive">
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-1>
                         <div class="icon_exclusive">
                             <svg width="85" height="61" viewBox="0 0 85 61" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -368,7 +436,7 @@
 
                     </div>
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-2>
 
                         <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -394,7 +462,7 @@
 
                     </div>
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-3>
                         <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M3.19664 43.8684H9.42595C10.7941 59.0086 22.9208 71.1465 38.056 72.513V78.6316C38.056 80.2152 39.2931 81.5 40.8956 81.5C42.5266 81.5 43.7683 80.2199 43.7683 78.6316V72.513C58.9034 71.1465 71.0304 59.0086 72.3979 43.8684H78.6278C80.2212 43.8684 81.5 42.5926 81.5 41C81.5 39.3983 80.212 38.1644 78.6278 38.1644H72.3979C71.0304 23.0242 58.9034 10.8864 43.7683 9.52002V3.36843C43.7683 1.78014 42.5266 0.5 40.8956 0.5C39.2931 0.5 38.056 1.78478 38.056 3.3684V9.52002C22.9208 10.8864 10.7941 23.0243 9.42595 38.1644H3.19664C1.56228 38.1644 0.5 39.4501 0.5 41C0.5 42.5404 1.55363 43.8684 3.19664 43.8684ZM40.8956 28.5066C42.5266 28.5066 43.7683 27.2264 43.7683 25.6381V15.8951C55.4725 17.2026 64.5433 26.3492 65.8181 38.1644H56.318C54.7337 38.1644 53.4452 39.3982 53.4452 41C53.4452 42.5927 54.7245 43.8684 56.318 43.8684H65.8179C64.5426 55.6517 55.4723 64.7974 43.7683 66.1049V56.3619C43.7683 54.7644 42.5174 53.5264 40.8956 53.5264C39.3022 53.5264 38.056 54.769 38.056 56.3619V66.1049C26.3518 64.7974 17.2815 55.6517 16.0066 43.8684H25.5064C27.0998 43.8684 28.3789 42.5927 28.3789 41C28.3789 39.3982 27.0906 38.1644 25.5064 38.1644H16.0065C17.2808 26.3492 26.3516 17.2026 38.056 15.8951V25.6381C38.056 27.2218 39.2931 28.5066 40.8956 28.5066Z"
@@ -416,7 +484,7 @@
 
                     </div>
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-4>
                         <svg width="70" height="73" viewBox="0 0 70 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M56.5385 24.3333H48.4615V8.11111C48.4615 5.95991 47.6106 3.89682 46.0959 2.37569C44.5811 0.854561 42.5267 0 40.3846 0H39.3077C37.5039 0.00140019 35.7524 0.609138 34.3325 1.72635C32.9126 2.84356 31.906 4.40593 31.4731 6.16444L26.0885 21.0348C25.7511 21.9822 25.1357 22.8046 24.3234 23.3935C23.5111 23.9823 22.5401 24.3101 21.5385 24.3333H0V73H56.5385C60.1087 73 63.5327 71.5757 66.0572 69.0405C68.5817 66.5053 70 63.0668 70 59.4815V37.8519C70 34.2665 68.5817 30.828 66.0572 28.2928C63.5327 25.7576 60.1087 24.3333 56.5385 24.3333ZM16.1538 67.5926H5.38462V29.7407H16.1538V67.5926ZM64.6154 59.4815C64.6154 61.6327 63.7644 63.6958 62.2497 65.2169C60.735 66.738 58.6806 67.5926 56.5385 67.5926H21.5385V29.7407C23.6693 29.7409 25.7479 29.0781 27.4883 27.8435C29.2287 26.6089 30.5456 24.8631 31.2577 22.8463L36.6423 7.84074V7.5163C36.7791 6.90639 37.1221 6.36293 37.613 5.97843C38.1039 5.59392 38.7123 5.39213 39.3346 5.40741H40.3846C41.0987 5.40741 41.7835 5.69226 42.2884 6.1993C42.7933 6.70635 43.0769 7.39404 43.0769 8.11111V29.7407H56.5385C58.6806 29.7407 60.735 30.5953 62.2497 32.1164C63.7644 33.6376 64.6154 35.7006 64.6154 37.8519V59.4815Z"
@@ -438,7 +506,7 @@
 
                     </div>
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-5>
                         <svg width="103" height="79" viewBox="0 0 103 79" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -464,7 +532,7 @@
 
                     </div>
 
-                    <div class="card_exclusive">
+                    <div class="card_exclusive" data-animation="down" data-delay-5>
                         <svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M83.0902 12.1975H80.8033V3.81173C80.8033 1.70765 79.0957 0 76.9918 0C74.8879 0 73.1803 1.70765 73.1803 3.81173V12.1975H19.8197V3.81173C19.8197 1.70765 18.1121 0 16.0082 0C13.9043 0 12.1967 1.70765 12.1967 3.81173V12.1975H9.90984C4.43961 12.2036 0.00609836 16.6374 0 22.108V83.0895C0.00609836 88.5601 4.43961 92.9939 9.90984 93H83.0902C88.5604 92.9969 92.9969 88.5601 93 83.0895V22.108C92.9939 16.6374 88.5604 12.2036 83.0902 12.1975ZM9.90984 19.821H83.0902C84.3525 19.821 85.377 20.8456 85.377 22.108V30.4938H7.62295V22.108C7.626 20.8456 8.64748 19.824 9.90984 19.821ZM83.0902 85.3765H9.90984C8.64748 85.3765 7.62295 84.352 7.62295 83.0895V38.1173H85.377V83.0895C85.377 84.352 84.3525 85.3765 83.0902 85.3765ZM57.3856 48.5827L39.5174 68.114L35.4833 64.1102C34.7942 63.4302 33.8489 63.0093 32.8061 63.0093C30.7022 63.0093 28.9947 64.717 28.9947 66.8211C28.9947 67.8731 29.4215 68.8276 30.1107 69.5167L36.9622 76.3168L37.0292 76.3626L37.075 76.4266C37.3006 76.6126 37.5598 76.7742 37.8373 76.9023L37.8586 76.9115C37.9714 76.9908 38.0995 77.0731 38.2337 77.1463L38.255 77.1554C38.6667 77.3262 39.1454 77.4268 39.6485 77.4268C40.1821 77.4268 40.6883 77.314 41.1456 77.1127L41.1212 77.1219C41.2829 77.0273 41.4201 76.9359 41.5481 76.8352L41.539 76.8413C41.85 76.6889 42.1153 76.5059 42.3562 76.2955L42.3531 76.2985L42.3988 76.2284L42.4598 76.1857L63.0052 53.727C63.6242 53.0531 64.0053 52.1475 64.0053 51.1534C64.0053 49.0493 62.3008 47.3416 60.1939 47.3416C59.0809 47.3416 58.0808 47.8173 57.3856 48.5766L57.3825 48.5797L57.3856 48.5827Z"
@@ -493,7 +561,7 @@
         </div>
 
 
-        <svg class="bg_exclusive" width="365" height="949" viewBox="0 0 365 949" fill="none"
+        <svg id="bg_exclusive" width="365" height="949" viewBox="0 0 365 949" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_i_5_38)">
                 <path
@@ -643,19 +711,19 @@
 
             <div class="area_warranty">
 
-                <div class="warranty_img">
+                <div class="warranty_img" data-animation="left">
                     <img src="img/icon_garantia.svg" alt="">
                 </div>
 
                 <div class="area_texts_warranty">
 
-                    <div class="title_warranty">
+                    <div class="title_warranty" data-animation="right" data-delay-1>
                         <h2>
                             Risco ZERO para você dar a iniciativa que pode mudar tudo!
                         </h2>
                     </div>
 
-                    <div class="sub_title_warranty">
+                    <div class="sub_title_warranty" data-animation="right" data-delay-2>
                         <h2>
                             Se você ainda tem alguma dúvida se esse programa funciona para você, aqui está a
                             solução:<br><br>
@@ -666,7 +734,7 @@
                         </h2>
                     </div>
 
-                    <div class="btn_warranty">
+                    <div class="btn_warranty" data-animation="right" data-delay-3>
                         <h2>COMPRAR O PROGRAMA COMPLETO</h2>
                     </div>
 
@@ -810,7 +878,7 @@
 
         </div>
 
-        <svg class="bg_faq" width="361" height="804" viewBox="0 0 361 804" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="bg_faq" width="361" height="804" viewBox="0 0 361 804" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_i_13_16)">
                 <path
                     d="M238.009 620.402C224.562 620.402 213.132 616.03 203.719 607.287C194.979 598.545 190.609 587.112 190.609 572.989C190.609 546.76 197.332 518.178 210.779 487.242C224.226 455.634 244.06 428.06 270.281 404.522C289.779 387.709 307.932 370.896 324.74 354.083C342.221 337.27 356.004 318.439 366.089 297.591C376.847 276.07 382.226 249.842 382.226 218.906C382.226 195.368 376.511 173.511 365.081 153.335C354.323 133.159 338.86 117.019 318.689 104.913C298.519 92.8081 273.979 86.7553 245.068 86.7553C212.123 86.7553 184.221 93.1443 161.362 105.922C139.174 118.7 122.366 136.522 110.936 159.388C99.5064 181.581 93.7915 207.809 93.7915 238.073C93.7915 251.523 89.4213 262.62 80.6809 271.363C71.9404 280.105 60.8468 284.477 47.4 284.477C33.9532 284.477 22.5234 280.105 13.1106 271.363C4.37021 262.62 0 251.523 0 238.073C0 190.996 10.0851 149.972 30.2553 115.001C51.0979 79.3576 79.6723 51.4479 115.979 31.2723C152.957 10.4241 195.987 0 245.068 0C289.443 0 328.774 9.41531 363.064 28.2459C397.353 47.0765 424.247 72.9686 443.745 105.922C463.915 138.876 474 176.873 474 219.915C474 257.576 467.613 290.193 454.838 317.767C442.736 344.668 425.928 369.215 404.413 391.408C383.57 412.928 359.702 434.785 332.809 456.979C313.983 473.119 301.208 492.622 294.485 515.488C287.762 538.354 284.4 557.521 284.4 572.989C284.4 587.112 280.03 598.545 271.289 607.287C262.549 616.03 251.455 620.402 238.009 620.402ZM238.009 804C219.855 804 204.391 797.611 191.617 784.833C178.843 772.055 172.455 756.587 172.455 738.429C172.455 720.271 178.843 704.803 191.617 692.025C204.391 678.575 219.855 671.849 238.009 671.849C256.162 671.849 271.626 678.575 284.4 692.025C297.174 704.803 303.562 720.271 303.562 738.429C303.562 756.587 297.174 772.055 284.4 784.833C271.626 797.611 256.162 804 238.009 804Z"
@@ -836,11 +904,52 @@
     </div>
 
 
+    <footer>
+
+        <div class="container_footer">
+
+            <div class="container_footer_int">
+
+                <div class="area_footer">
+
+                    <div class="text_footer">
+                        <h2>
+                            <b>Aviso Legal:</b> “Nenhuma informação contida neste produto deve ser interpretada como uma
+                            afirmação da obtenção de resultados. Qualquer referência ao desempenho passado ou potencial
+                            de uma estratégia abordada no conteúdo não é, e não deve ser interpretada como uma
+                            recomendação ou como garantia de qualquer resultado específico.”
+                        </h2>
+                    </div>
+
+                    <div class="copyright">
+                        <h2>
+                            Copyright © 2022 Inc. Todos os direitos reservados. O Poder em Nós. CNPJ: 23.705.563.0001/80
+                        </h2>
+                    </div>
+
+                    <div class="privacy">
+                        <h2>
+                            Política de Privacidade | Política de Vendas | Avisos Legais
+                        </h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
 
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js" integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+        integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 
     <script type="text/javascript">
