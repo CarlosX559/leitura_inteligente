@@ -21,6 +21,7 @@ body {
 a {
     text-decoration: none !important;
 }
+
 /*
 [data-animation] {
     opacity: 0;
@@ -193,6 +194,7 @@ a {
     margin: auto;
     background-position: center;
 }
+
 .area_texts_home {
     display: flex;
     flex-direction: column;
@@ -208,7 +210,7 @@ a {
     line-height: 40px;
     color: var(--color-primary);
     margin: 0px 0px 20px 0px;
- 
+
 }
 
 .sub_title_home p {
@@ -517,9 +519,11 @@ a {
     color: var(--color-primary);
     margin: 0px 0px 20px 0px;
 }
+
 .sub_title_fast {
     max-width: 500px;
 }
+
 .sub_title_fast h2 {
     text-align: center;
     font-weight: 700;
@@ -743,6 +747,11 @@ a {
     height: 100%;
     background-color: #042640;
     z-index: 1;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
 }
 
 .container_comments {
