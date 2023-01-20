@@ -522,7 +522,6 @@ a {
 .title_fast h2 {
     font-weight: 500;
     font-size: 30px;
-    text-transform: lowercase;
     color: var(--color-primary);
     margin: 0px 0px 20px 0px;
 }
@@ -619,7 +618,6 @@ a {
     font-size: 26px;
     line-height: 30px;
     text-align: center;
-    text-transform: lowercase;
     color: #FFFFFF;
     margin: 0px 0px 40px 0px;
 }
@@ -634,7 +632,6 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    text-transform: lowercase;
     color: var(--color-primary);
     padding: 0px 20px 0px 20px;
 }
