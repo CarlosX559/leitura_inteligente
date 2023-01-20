@@ -1650,6 +1650,10 @@ footer {
     .btn_warranty h2 {
         font-size: 14px;
     }
+
+    .faq_int {
+        padding: 10px 20px;
+    }
  
     .title_faq h2 {
         font-size: 22px;
