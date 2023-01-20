@@ -1519,7 +1519,8 @@ footer {
 
     .title_home h2 {
         font-size: 20px;
-        line-height: normal;
+        line-height: 20px;
+        margin: 0px;
     }
 
     .sub_title_home p {
