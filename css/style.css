@@ -66,12 +66,14 @@ a {
 }*/
 
 #container_home {
-    height: 844px;
+    height: 100%;
     background: linear-gradient(122.76deg, rgba(39, 158, 249, 0.3) 29.78%, rgba(0, 0, 0, 0) 111.31%), #003258;
+    padding: 180px 0px 180px 0px;
 }
 
 .container_home {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -254,7 +256,6 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     color: var(--color-secondary);
     margin: 0px;
 }
@@ -303,6 +304,7 @@ a {
 
 .container_read {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -325,6 +327,7 @@ a {
     background: linear-gradient(122.76deg, rgba(39, 158, 249, 0.3) 29.78%, rgba(0, 0, 0, 0) 111.31%), #003258;
     position: relative;
     margin-top: -80px;
+    padding: 0px 20px;
 }
 
 .sleep {
@@ -342,6 +345,7 @@ a {
 .area_texts_read {
     max-width: 660px;
     width: 100%;
+    z-index: 1;
 }
 
 .area_texts_read h2 {
@@ -359,6 +363,7 @@ a {
 
 .container_worry {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     padding: 60px 0px 60px 0px;
     width: 100%;
@@ -380,6 +385,7 @@ a {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
+    padding: 0px 20px;
 }
 
 .title_worry {
@@ -491,6 +497,7 @@ a {
 
 .container_fast {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     padding: 120px 0px 120px 0px;
@@ -501,6 +508,7 @@ a {
     justify-content: center;
     width: 100%;
     max-width: 1440px;
+    padding: 0px 20px;
 }
 
 .area_fast {
@@ -650,6 +658,7 @@ a {
 
 .container_exclusive {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     padding: 160px 0px 140px 0px;
@@ -663,12 +672,18 @@ a {
     align-items: center;
     width: 100%;
     max-width: 1440px;
+    padding: 0px 20px;
 }
 
 .area_exclusive {
     display: flex;
     flex-direction: column;
     max-width: 1150px;
+}
+
+.title_exclusive {
+    width: 100%;
+    max-width: 720px;
 }
 
 .title_exclusive h2 {
@@ -756,6 +771,7 @@ a {
 
 .container_comments {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     padding: 80px 0px 80px 0px;
@@ -831,6 +847,7 @@ a {
 
 .container_warranty {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     background: #F3F3F3;
@@ -845,6 +862,7 @@ a {
     align-items: center;
     width: 100%;
     max-width: 1440px;
+    padding: 0px 20px;
 }
 
 .area_warranty {
@@ -901,6 +919,7 @@ a {
 
 .container_faq {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
     position: relative;
@@ -927,6 +946,11 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.title_faq {
+    width: 100%;
+    max-width: 500px;
 }
 
 .title_faq h2 {
@@ -1023,6 +1047,7 @@ footer {
 
 .container_footer {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     width: 100%;
 }
@@ -1033,6 +1058,7 @@ footer {
     align-items: center;
     max-width: 1440px;
     height: 100%;
+    padding: 0px 20px;
 }
 
 .area_footer {
@@ -1069,4 +1095,581 @@ footer {
     line-height: 19px;
     color: #FFFFFF;
     margin: 0px;
+}
+
+@media(max-width: 1024px) {
+    #container_home {
+        padding: 80px 0px 80px 0px;
+    }
+
+    .area_home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_home h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .sub_title_home p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .btn_home h2 {
+        font-size: 16px;
+    }
+
+    .area_texts_home {
+        text-align: center;
+    }
+
+    #bg_home {
+        width: 400px;
+    }
+
+    /*Read*/
+    .area_read {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .area_texts_read {
+        text-align: center;
+    }
+
+    .bg_read {
+        bottom: 0px;
+    }
+
+    .area_texts_read h2 {
+        margin: 0px 0px 0px 0px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .sleep {
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .bg_read {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .box_2 {
+        height: 100px;
+    }
+
+    /*Worry*/
+    .title_worry h2 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .title_worry h2 b {
+        max-width: max-content;
+        padding: 10px 10px;
+        height: 100%;
+    }
+
+    .cards_worry {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title_spend h2,
+    .title_suffer h2,
+    .title_wrong h2 {
+        margin: 20px 0px 10px 0px;
+    }
+
+    /*Fast*/
+    .container_fast {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .sub_title_fast {
+        max-width: max-content;
+    }
+
+    .title_fast h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .sub_title_fast h2 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .area_info_fast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn_fast h2 {
+        font-size: 16px;
+    }
+
+    .text_info_fast h2 {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .sub_text_info_fast {
+        max-width: 600px;
+    }
+
+    .sub_text_info_fast p {
+        font-size: 22px;
+    }
+
+    /*Exclusive*/
+    .container_exclusive {
+        padding: 100px 0px 100px 0px;
+    }
+    .title_exclusive {
+        max-width: 100%;
+    }
+
+    .title_exclusive h2 {
+        font-size: 40px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .title_exclusive h2 b {
+        max-width: max-content;
+        padding: 0px 10px;
+        height: 100%;
+    }
+
+    #bg_exclusive {
+        width: 280px;
+        left: 0px;
+        bottom: 0px;
+        top: 80px;
+        z-index: -1;
+    }
+
+    /*Comments*/
+    .title_comments h2 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .area_comments {
+        gap: 30px;
+    }
+
+    .comment_text h2 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .comment_name h2 {
+        font-size: 22px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+
+    /*Warranty*/
+    .container_warranty {
+        padding: 60px 0px 60px 0px;
+        margin: 40px 0px 60px 0px;
+    }
+
+    .area_warranty {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .warranty_img img {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .area_texts_warranty {
+        text-align: center;
+        align-items: center;
+    }
+
+    .title_warranty h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .sub_title_warranty h2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .btn_warranty h2 {
+        font-size: 16px;
+    }
+
+    .btn_warranty {
+        margin: 0px;
+    }
+
+    /*Faq*/
+    #bg_faq {
+        width: 260px;
+        height: 100%;
+        top: 40px;
+    }
+
+    .area_faq {
+        gap: 10px;
+    }
+
+    .container_faq_int {
+        padding: 0px 20px;
+    }
+
+    .faq_int {
+        padding: 15px 30px;
+    }
+
+    .quest_faq h2 {
+        font-size: 22px;
+    }
+
+    .aswer_faq h2 {
+        font-size: 20px;
+    }
+
+    .title_faq {
+        max-width: 100%;
+    }
+
+    .title_faq h2 {
+        text-align: center;
+        font-size: 36px;
+        line-height: normal;
+        margin: 0px 0px 40px 0px;
+    }
+
+    /*Footer*/
+    footer {
+        margin-top: 60px;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .area_footer {
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    #container_home {
+        padding: 40px 0px 40px 0px;
+    }
+
+    #bg_home {
+        width: 300px;
+    }
+
+    .box_2 {
+        height: 80px;
+    }
+
+    .area_texts_read h2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .cards_worry {
+        gap: 20px;
+    }
+
+    .title_worry h2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .title_spend h2,
+    .title_suffer h2,
+    .title_wrong h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_spend p,
+    .sub_title_suffer p,
+    .sub_title_wrong p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .title_fast h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_fast h2 {
+        font-size: 28px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .text_info_fast h2 {
+        font-size: 20px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .sub_text_info_fast p {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .sub_text_info_fast {
+        max-width: 400px;
+    }
+
+    .box_left {
+        width: 15px;
+        height: 120px;
+    }
+
+    .box_right {
+        width: 15px;
+        height: 120px;
+    }
+
+
+    #bg_exclusive {
+        width: 220px;
+    }
+
+    .container_exclusive {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .title_exclusive h2 {
+        font-size: 30px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .bg_comment_1 {
+        max-width: 400px;
+    }
+
+    .bg_comment_2 {
+        height: 120px;
+    }
+
+    .area_comments_text {
+        gap: 10px;
+    }
+
+    .title_comments h2 {
+        font-size: 22px;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    .comment_text h2 {
+        font-size: 18px;
+    }
+
+    .comment_name h2 {
+        font-size: 18px;
+    }
+
+    .container_warranty {
+        margin: 40px 0px 40px 0px;
+    }
+
+    .title_warranty h2 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .sub_title_warranty h2 {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    #bg_faq {
+        width: 200px;
+        top: 40px;
+    }
+
+    .title_faq h2 {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+}
+
+@media(max-width: 425px) {
+
+    .title_home h2 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .sub_title_home p {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .btn_home {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn_home h2 {
+        font-size: 14px;
+    }
+
+    lottie-player {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+
+
+
+    .sub_text_info_fast {
+        max-width: 320px;
+    }
+
+    .sub_text_info_fast p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .box_left {
+        display: none;
+    }
+
+    .box_right {
+        display: none;
+    }
+
+    .area_texts_read h2 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .title_worry h2 b {
+        padding: 5px 5px;
+    }
+
+    .title_spend h2,
+    .title_suffer h2,
+    .title_wrong h2 {
+        font-size: 20px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .sub_title_spend p,
+    .sub_title_suffer p,
+    .sub_title_wrong p {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+
+    .container_fast {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .title_fast h2 {
+        font-size: 20px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .sub_title_fast h2 {
+        font-size: 22px;
+    }
+
+    .btn_fast {
+        padding: 10px 20px 10px 20px;
+        margin: 20px 0px;
+    }
+
+    .btn_fast h2 {
+        font-size: 14px;
+    }
+
+    .text_info_fast h2 {
+        font-size: 16px;
+    }
+
+    .title_exclusive h2 {
+        font-size: 26px;
+    }
+    .card_exclusive {
+        height: 340px;
+    }
+
+    .title_comments h2 {
+        font-size: 20px;
+    }
+    .comment_text h2 {
+        font-size: 16px;
+    }
+    .comment_name h2 {
+        font-size: 16px;
+    }
+    .area_comments {
+        padding: 0px 20px;
+       
+    }
+    .carousel-control-prev {
+        left: -20px !important;
+        top: 40px !important;
+    }
+    .carousel-control-next {
+        right: -20px !important;
+        top: 40px !important;
+    }
+
+
+    .btn_warranty {
+        padding: 10px 20px 10px 20px;
+        margin: 0px 0px;
+    }
+
+    .btn_warranty h2 {
+        font-size: 14px;
+    }
+ 
+    .title_faq h2 {
+        font-size: 22px;
+    }
+
+    .quest_faq h2 {
+        font-size: 18px;
+        line-height: normal;
+        max-width: 250px;
+    }
+    .aswer_faq h2 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .text_footer h2 {
+        font-size: 14px;
+    }
+    .copyright h2 {
+        font-size: 14px;
+    }
+    .privacy h2 {
+        font-size: 12px;
+    }
 }
