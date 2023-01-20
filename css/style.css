@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 
 :root {
 
@@ -9,7 +10,7 @@
 }
 
 * {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
 }
 
 body {
@@ -205,7 +206,6 @@ a {
 }
 
 .title_home h2 {
-    font-family: 'Nunito';
     font-weight: bold;
     font-size: 38px;
     line-height: 40px;
@@ -254,7 +254,7 @@ a {
 .btn_home h2 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color-secondary);
     margin: 0px;
 }
@@ -574,8 +574,7 @@ a {
 
 .info_int_fast h2 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
     color: #FFFFFF;
     margin: 0px;
 }
@@ -605,8 +604,7 @@ a {
 
 .btn_fast h2 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
     color: var(--color-secondary);
     margin: 0px;
 }
@@ -618,8 +616,8 @@ a {
 
 .text_info_fast h2 {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 30px;
     text-align: center;
     text-transform: lowercase;
     color: #FFFFFF;
@@ -795,8 +793,8 @@ a {
 
 .title_comments h2 {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 38px;
+    line-height: 44px;
     color: var(--color-primary);
 }
 
@@ -816,8 +814,8 @@ a {
 
 .comment_text h2 {
     font-weight: 400;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 30px;
     text-align: center;
     color: #FFFFFF;
     margin: 0px;
@@ -825,8 +823,8 @@ a {
 
 .comment_name h2 {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 30px;
     text-align: center;
     color: var(--color-primary);
     margin: 0px;
@@ -909,8 +907,7 @@ a {
 
 .btn_warranty h2 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
     color: var(--color-secondary);
     margin: 0px;
 }
@@ -954,8 +951,8 @@ a {
 
 .title_faq h2 {
     font-weight: 600;
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 44px;
+    line-height: 48px;
     color: #101C25;
     margin: 0px 0px 60px 0px;
 }
@@ -1236,6 +1233,7 @@ footer {
     .container_exclusive {
         padding: 100px 0px 100px 0px;
     }
+
     .title_exclusive {
         max-width: 100%;
     }
@@ -1541,9 +1539,6 @@ footer {
         height: 100px !important;
     }
 
-
-
-
     .sub_text_info_fast {
         max-width: 320px;
     }
@@ -1614,37 +1609,45 @@ footer {
     .title_exclusive h2 {
         font-size: 26px;
     }
+
     .card_exclusive {
         height: 340px;
     }
+
     .bg_comment_1 {
         max-width: 340px;
     }
+
     .area_comments_text {
         height: 130px;
     }
+
     .title_comments h2 {
         font-size: 18px;
     }
+
     .comment_text h2 {
         font-size: 15px;
     }
+
     .comment_name h2 {
         font-size: 16px;
     }
+
     .area_comments {
         padding: 0px 20px;
-       
+
     }
+
     .carousel-control-prev {
         left: -20px !important;
         top: 40px !important;
     }
+
     .carousel-control-next {
         right: -20px !important;
         top: 40px !important;
     }
-
 
     .btn_warranty {
         padding: 10px 20px 10px 20px;
@@ -1658,7 +1661,7 @@ footer {
     .faq_int {
         padding: 10px 20px;
     }
- 
+
     .title_faq h2 {
         font-size: 22px;
     }
@@ -1668,6 +1671,7 @@ footer {
         line-height: normal;
         max-width: 250px;
     }
+
     .aswer_faq h2 {
         font-size: 16px;
         line-height: normal;
@@ -1676,9 +1680,11 @@ footer {
     .text_footer h2 {
         font-size: 14px;
     }
+
     .copyright h2 {
         font-size: 14px;
     }
+
     .privacy h2 {
         font-size: 12px;
     }
