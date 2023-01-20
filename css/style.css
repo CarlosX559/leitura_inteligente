@@ -1617,6 +1617,9 @@ footer {
     .card_exclusive {
         height: 340px;
     }
+    .bg_comment_1 {
+        max-width: 340px;
+    }
     .area_comments_text {
         height: 130px;
     }
