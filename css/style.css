@@ -1288,8 +1288,8 @@ footer {
 
     /*Warranty*/
     .container_warranty {
-        padding: 60px 0px 60px 0px;
-        margin: 40px 0px 60px 0px;
+        padding: 40px 0px 40px 0px;
+        margin: 40px 0px 40px 0px;
     }
 
     .area_warranty {
@@ -1616,7 +1616,9 @@ footer {
     .card_exclusive {
         height: 340px;
     }
-
+    .area_comments_text {
+        height: 130px;
+    }
     .title_comments h2 {
         font-size: 20px;
     }
